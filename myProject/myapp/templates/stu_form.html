@@ -1,0 +1,26 @@
+<h1>Student Form</h1>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+
+        {{form.as_p}}
+        <label>Roll number: </label>
+        <input type="number" name="roll_number">
+        <br>
+
+        <label>Name: </label>
+        <input type="text"name="name">
+        <br>
+
+        <label>Course: </label>
+        <input type="text" name="course">
+        <br>
+
+        <label>Marks: </label>
+        <input type="number" name="marks">
+        <br>
+
+        <input type="submit" value="Submit">
+        </form>
+    </body>
+    
